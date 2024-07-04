@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/3-Resources/PERSONAL/Deep Learning - Curso by Pepe Marqués/","title":"Deep Learning - Curso by Pepe Marqués","noteIcon":""}
 ---
 
+Ver también: [[0-Inbox/Probabilistic and Inductive Reasoning - Diego\|Probabilistic and Inductive Reasoning - Diego]], de la asignatura de Fundamentos de IA.
 
 ![[DeepLearningI.pdf]]
 
@@ -26,7 +27,7 @@ Asignatura de ML el año que viene, a Pepe le gustó mucho.
 
 # Deep learning, por qué se usa y aplicaciones
 
-Viene del [[Machine Learning\|Machine Learning]],el cual solo es útil en pequeños datasets, pero no es escalable conforme añadimos más datos.
+Viene del [[0-Inbox/Machine Learning\|Machine Learning]], el cual solo es útil en pequeños datasets, pero no es escalable conforme añadimos más datos.
 
 Con las Deep Neural Networks si que hay escalabilidad, más performance a mayores datos.
 
@@ -278,3 +279,4 @@ Funcones de activación
 Dudas entre si hace falta hacer el flatten para pasar de imagen a lineal, 
 Este ejemplo hacerlo sin convoluciones.
 Intentos de superar un 97% de accuracy.
+
