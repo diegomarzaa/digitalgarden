@@ -10,3 +10,11 @@ Algunas de las notas en las que puedes entrar:
 
 - [[3-Resources/PERSONAL/Deep Learning - Curso by Pepe Marqués\|Deep Learning - Curso by Pepe Marqués]]
 - [[0-Inbox/Curso Drone Espaitec\|Curso Drone Espaitec]]
+
+---
+
+::: hidden
+This is some private text that should not be published.
+:::
+
+---
