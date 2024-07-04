@@ -3,7 +3,7 @@
 ---
 
 
-Hola! Bienvenid@ a mis notas compartidas...
+Hola! Bienvenid@ a mis notas compartidas!!
 Ten en cuenta que están siendo actualizadas constaentemente.
 Entra en alguna de las que están publicadas:
 
