@@ -9,7 +9,7 @@ Ver también: [[0-Inbox/Probabilistic and Inductive Reasoning - Diego\|Probabili
 
 ---
 
-Hay cursos hechos a partir de papers científicos, de hace 10 años o más.
+Hay cursos hechos a partir de papers científicos, de hace 10 años o más.[^4]
 También hay enlaces en las diapos a los papers en ese momento.
 La teoria en general del deep learning se queda hasta 2018, hasta transformers. Más reciente es más difícil.
 Las redes convolucionales están siendo superadas o complementadas por nuevos enfoques y modelos más avanzados y complejos. Modelos máscomplejos como las [[Deep Neural Networks\|Deep Neural Networks]], y [[Recursive Neural Networks\|Recursive Neural Networks]]. También los [[Transformers\|Transformers]] y mecanismos de atención. Las [[GANs\|GANs]] y modelos de difusión, que van más allá de las típicas tareas de clasificación.
@@ -290,3 +290,4 @@ Intentos de superar un 97% de accuracy.
 [^1]: Esto se debe a que muchos de los conceptos de este curso están relacionados con la asignatura de fundamentos de IA, durante el documento, cuando es interesante, se han enlazado partes de esta asignatura o de otras que puedan ayudar a entender mejor todo.
 [^2]: PDF descargado del grupo de whatsapp del Asti
 [^3]: Primer ejemplo red neuronal de 1 entrada y una salida.
+[^4]: PREPUCIO
