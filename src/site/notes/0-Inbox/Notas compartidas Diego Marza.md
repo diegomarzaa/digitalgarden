@@ -13,8 +13,6 @@ Algunas de las notas en las que puedes entrar:
 
 ---
 
-::: hidden
-This is some private text that should not be published.
-:::
+ 
 
 ---
