@@ -24,6 +24,19 @@ Asignatura de ML el año que viene, a Pepe le gustó mucho.
 5. [Artificial Intelligence: A Modern Approach by Stuart Russell and Peter Norvig](http://aima.cs.berkeley.edu/)
 6. [Bayesian Reasoning and Machine Learning by David Barber](http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/031210.pdf)](https://www.springer.com/gp/book/9783030622283)
 
+Material para hacerse una idea
+[https://www.youtube.com/watch?v=aircAruvnKk](https://www.youtube.com/watch?v=aircAruvnKk)
+[https://www.youtube.com/watch?v=IHZwWFHWa-w](https://www.youtube.com/watch?v=IHZwWFHWa-w)
+[https://www.youtube.com/watch?v=Ilg3gGewQ5U&t=1s](https://www.youtube.com/watch?v=Ilg3gGewQ5U&t=1s)
+
+Posible material para estudiar
+[http://neuralnetworksanddeeplearning.com/](http://neuralnetworksanddeeplearning.com/)
+[https://github.com/mnielsen/neural-networks-and-deep-learning](https://github.com/mnielsen/neural-networks-and-deep-learning)
+
+Curso de Stanford sobre Redes Neuronales para visión artificial de Andrej Karpathy, cofundador de OpenAI y antiguo director de Tesla Autopilot
+[https://www.youtube.com/watch?v=NfnWJUyUJYU&list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC](https://www.youtube.com/watch?v=NfnWJUyUJYU&list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC)
+[https://cs231n.github.io/](https://cs231n.github.io/)
+
 ---
 
 # Deep learning, por qué se usa y aplicaciones
