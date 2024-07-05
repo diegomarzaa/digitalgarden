@@ -107,9 +107,4 @@
 
 
 # Concepto Normativo
-
 [seguridadaerea.gob.es/sites/default/files/Curso.Formacion.A1.A3.Completo.v6.pdf](https://www.seguridadaerea.gob.es/sites/default/files/Curso.Formacion.A1.A3.Completo.v6.pdf)
-
-# Programación
-
-

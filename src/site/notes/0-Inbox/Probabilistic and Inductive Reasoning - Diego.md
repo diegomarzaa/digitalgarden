@@ -657,7 +657,9 @@ Tipos de machine learning y tipos de tareas/problemas que queremos resolver con 
 { #ec2qi}
 
 	- Modelo entrenado con un training set formado por pares de datos con etiquetas (Xi, Yi).
-	- Tenemos unas características (features, entrada al modelo) que decimos que son x y una etiqueta (class label, salida del modelo) que será la y.
+	- Tenemos unas *características* (features, entrada al modelo) que decimos que son x y una etiqueta (class label, salida del modelo) que será la y.
+{ #bfzn-}
+
 	- El modelo aprende a mapear inputs con outputs. Lo importante es la [[0-Inbox/Probabilistic and Inductive Reasoning - Diego#^84yxy\|generalización]]
 
 	- **Classification**:
