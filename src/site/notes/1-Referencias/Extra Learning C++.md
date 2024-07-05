@@ -2,6 +2,31 @@
 {"dg-publish":true,"permalink":"/1-Referencias/Extra Learning C++/","title":"Extra Learning C++","noteIcon":""}
 ---
 
+> [!abstract]+ CONTENIDO EXTRA:
+>
+> - [Cplusplus.com](https://cplusplus.com/)
+> - *[Cppreference.com](https://en.cppreference.com/)*
+>
+> - [C++ Tutorial](https://www.w3schools.com/cpp/) en W3Schools
+> - [The C++ Workshop](https://ebookcentral.proquest.com/lib/univjau1/detail.action?docID=6039456)
+>
+> - [OnlineGDB](https://www.onlinegdb.com/)
+> - C++ en II17 (2010/2011): [introducción](https://aulavirtual.uji.es/pluginfile.php/6556898/mod_label/intro/Tema1-II17.pdf), [clases](https://aulavirtual.uji.es/pluginfile.php/6556898/mod_label/intro/Tema2-II17.pdf) y [herencia](https://aulavirtual.uji.es/pluginfile.php/6556898/mod_label/intro/Tema3-II17.pdf)
+> - Git y GitHub en IR2113 (2022/2023): partes [primera](https://aulavirtual.uji.es/pluginfile.php/6556898/mod_label/intro/Git1-IR2113.pdf) y [segunda](https://aulavirtual.uji.es/pluginfile.php/6556898/mod_label/intro/Git2-IR2113.pdf)
+> - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+> - [Stack Overflow](https://stackoverflow.com/questions)
+> - [The Kattis Problem Archive](https://open.kattis.com/)
+>
+> - CppUnit:
+>     - [CppUnit Cookbook](http://cppunit.sourceforge.net/doc/1.8.0/cppunit_cookbook.html)
+>     - [CppUnit Tutorial](http://www.evocomp.de/tutorials/tutorium_cppunit/howto_tutorial_cppunit_en.html)
+> - [Test Smell Types](https://testsmells.org/pages/testsmells.html)
+>
+>
+> ==[Learn C++ – Skill up with our free tutorials](https://www.learncpp.com/)==
+> [Draft C++ Standard: Contents](https://eel.is/c++draft/)
+> [Learn Contemporary C++ | Concise&Visual Examples | hacking C++](https://hackingcpp.com/)
+
 # Debug code
 
 [GDB online Debugger | Compiler - Code, Compile, Run, Debug online C, C++](https://www.onlinegdb.com/)

@@ -970,6 +970,3 @@ long *mylong;    // Memoria 3000
 - `if (izq)` =  `if (izq != nullptr)`
 	- Siendo izq un puntero.
 
-
-
-
