@@ -5,7 +5,7 @@
 
 Recursos:
 - ==[[0-Inbox/Neural Networks, Deep Learning, (Recursos para aprender)\|Neural Networks, Deep Learning, (Recursos para aprender)]]==
-- [[0-Inbox/Probabilistic and Inductive Reasoning - Diego\|Probabilistic and Inductive Reasoning - Diego]]
+- [[1-Referencias/Probabilistic and Inductive Reasoning - Diego\|Probabilistic and Inductive Reasoning - Diego]]
 
 ![[DeepLearningI.pdf]][^1]
 
