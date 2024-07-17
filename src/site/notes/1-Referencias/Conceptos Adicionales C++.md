@@ -32,24 +32,6 @@
 
 [GDB online Debugger | Compiler - Code, Compile, Run, Debug online C, C++](https://www.onlinegdb.com/)
 
-# Possible Errors, Warnings...
-
-**POSIBLE ERRORS IN COMPILING**
-https://www.learncpp.com/cpp-tutorial/compiling-your-first-program/
-https://www.learncpp.com/cpp-tutorial/a-few-common-cpp-problems/
-
-**Compiler Extensions**
-https://www.learncpp.com/cpp-tutorial/configuring-your-compiler-compiler-extensions/
-- many compilers implement their own changes to the language, often to enhance compatibility with other versions of the language.
-- *Writing a program that makes use of a compiler extension allows you to write programs that are incompatible with the C++ standard*
-- compiler extensions are often enabled by default.
-- Disable compiler extensions to ensure your programs (and coding practices) remain compliant with C++ standards and will work on any system
-
-
-**Compiler Warning and Error Levels**
-https://www.learncpp.com/cpp-tutorial/configuring-your-compiler-warning-and-error-levels/
-- Best practice: *Turn your warning levels up to the maximum*, especially while you are learning. It will help you identify possible issues
-- Best practice: *Enable “Treat warnings as errors”*. This will force you to resolve all issues causing warnings.
 
 # sizeof() + Size of Variables
 

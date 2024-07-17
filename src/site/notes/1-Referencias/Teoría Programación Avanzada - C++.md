@@ -4,7 +4,7 @@
 
 
 > [!info]+ Información
-> Nota con cosas extra algo más desordenadas que no hemos dado como tal en la carrera: [[1-Referencias/Conceptos Adicionales C++\|Conceptos Adicionales C++]]
+> Puedes ver también la siguiente nota con cosas extra algo más desordenadas que no hemos dado como tal en la carrera: [[1-Referencias/Conceptos Adicionales C++\|Conceptos Adicionales C++]]
 
 > [!warning]+ Aviso
 > Muchas veces se pueden asumir conocimientos básicos de otros lenguajes de programación, como python.
@@ -36,7 +36,7 @@ When you sit down and start coding right away, you’re typically thinking “I 
 - Most end in a semicolon (;)
 - ![Pasted image 20230718204415.png](/img/user/_Archivos/Pasted%20image%2020230718204415.png)
 
-# [[0-Inbox/Compilación en C++\|Compilación en C++]]
+# [[3-Resources/Compilación en C++\|Compilación en C++]]
 
 # Includes, Namespaces
 
@@ -76,7 +76,7 @@ When you sit down and start coding right away, you’re typically thinking “I 
 	- Un ejemplo de espacio de nombres es std, usado en cout, string...
 	- *using namespace std*  -> nos permite acceder a lo de std sin mencionarilo con su prefijo, puede causar conflictos
 
-# [[1-Referencias/Git\|Git]]
+# [[3-Resources/Git\|Git]]
 
 # Variables + Types of Data
 
