@@ -3,6 +3,9 @@
 ---
 
 Hola! Bienvenid@ a mis notas compartidas!!
+
+https://diego-notes.netlify.app/
+
 Una característica destacable de estas notas y apuntes es que están enlazadas entre sí.
 Ten en cuenta que están siendo actualizadas constantemente, por lo que algunas partes pueden no estar suficientemente bien explicadas.
 

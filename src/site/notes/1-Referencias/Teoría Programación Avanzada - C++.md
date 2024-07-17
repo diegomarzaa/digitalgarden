@@ -36,34 +36,7 @@ When you sit down and start coding right away, you’re typically thinking “I 
 - Most end in a semicolon (;)
 - ![Pasted image 20230718204415.png](/img/user/_Archivos/Pasted%20image%2020230718204415.png)
 
-# IDEs, Instalación, Compiladores
-
-- Aspectos básicos:
-	- Es necesario compilar el codigo fuente en codigo maquina
-	- g++ es el compilador, lo convierte en un fichero ejecutable.
-	- Diferencias: python mas lento pero facil de escribir. C++ permite hacer operaciones de bajo nivel, es más eficiente (espacio y tiempo), código preciso para ciertas acciones.
-		- Python te ahorraba tener que indicar el tipo de variable.
-	- En qué convierte el compilador un codigo fuente?
-		- En archivos de objeto llamados tipicamente *nombre.o* o nombre.obj.
-		- En binario, leíble por la compu
-
-- **INSTALACIÓN**
-	- [C++ programming with Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp#_example-install-mingwx64)
-	- [MSYS2](https://www.msys2.org/)
-	- setup correctly (linux too): https://www.learncpp.com/cpp-tutorial/installing-an-integrated-development-environment-ide/)
-	- Programs that are easily portable to LInux: https://www.codeblocks.org/downloads/binaries/
-
-- **CONFIGURAR COMPILADOR**
-	- https://www.learncpp.com/cpp-tutorial/configuring-your-compiler-build-configurations/
-
-- **FORMAS DE COMPILAR**;
-	- 1)  Directamente en exe
-		- ``g++ principal.cpp auxiliar.cpp -o programa.exe``
-	- 2)  Primero objetos, luego linkeado en exe
-		- ``g++ -c auxiliar.cpp``
-		- ``g++ -c principal.cpp``
-		- `g++ principal.o auxiliar.o -o programa.exe` (enlace)
-	- La ventaja del 2 es que obtenemos los.o y ante cambios no habrá que recompilarlo todo
+# [[0-Inbox/Compilación en C++\|Compilación en C++]]
 
 # Includes, Namespaces
 
@@ -103,20 +76,7 @@ When you sit down and start coding right away, you’re typically thinking “I 
 	- Un ejemplo de espacio de nombres es std, usado en cout, string...
 	- *using namespace std*  -> nos permite acceder a lo de std sin mencionarilo con su prefijo, puede causar conflictos
 
-# Git
-
-- No está bien explicado desde 0, esto son simplemente los pasos más comunes
-
-- Pasos clave cada vez que se quiere subir algo nuevo a un directorio ya existente:
-	``git add.``
-	``git commit -m "TEXTO"``
-	``git push``
-
-- Agregar repositorio
-	``git clone "url_repositorio"``
-
-- Configuraciones:
-	``git config--global...``
+# [[1-Referencias/Git\|Git]]
 
 # Variables + Types of Data
 
@@ -232,25 +192,12 @@ When you sit down and start coding right away, you’re typically thinking “I 
 
 - Igual que python
 - Orden: Parenthesis first, then Exponents, then Multiplication & Division, then Addition & Subtraction
-- ==++ y --: Increment, decrement==
-- ==+=: Add a value to a variable==
-
-```cpp	
-cout << 5 + 2 << endl; // 7
-```
 
 **Logical Operators**
 
-![2023-09-16_12-18-16_logical.png](/img/user/_Archivos/2023-09-16_12-18-16_logical.png)
+![2023-09-16_12-18-16_logical.png|380](/img/user/_Archivos/2023-09-16_12-18-16_logical.png)
 
 ![2023-09-16_12-19-07_and_or_not.png](/img/user/_Archivos/2023-09-16_12-19-07_and_or_not.png)
-
-```cpp
-cout << (5 == 5) << endl; // 1 
-string y;
-getline(cin, y);
-return 0;
-```
 
 # Estructuras De Datos
 
@@ -814,268 +761,13 @@ int main()
 
 	- [28.7 — Random file I/O – Learn C++](https://www.learncpp.com/cpp-tutorial/random-file-io/)
 
-# Técnicas de caja negra y blanca
+# [[3-Resources/Captura y tratamiento de excepciones\|Captura y tratamiento de excepciones]]
 
-- Si el programa de pruebas está mal, es que la tabla de casos y escenarios deben ser corregidas.
+# [[3-Resources/OOP, Programación Orientada a Objetos\|OOP, Programación Orientada a Objetos]]
 
-- CPPUNIT
+# [[0-Inbox/Punteros y memoria dinámica\|Punteros y memoria dinámica]]
 
-	- Clase y programa en un fichero
-	- Agrupar pruebas en clase TestFixture con TestSuite
-	- No es necesario usar un método de prueba distinto para cada caso de prueba si hay muchos.
-	- Lanzador con salida por consola
-	- `g++ AAA_test.o AAA.o -lcppunit -o AAA_test`
-
-- OBJETIVOS
-	- Pruebas de Unidad: Funciones o clases
-	- Un programador debe evitar probar su propio programa
-	- Prever condiciones inválidas
-	- Evita improvisar los casos de prueba
-	- El estado mental correcto es asumir que habrá errores.
-
-	- Técnica FIRST:
-		- Fast (rápido): Ejecución frecuente de los tests
-		- Independent (independiente): El orden de los tests no debe de afectar al resultado
-		- Repeatable (repetible): Independiente del servidor, configuración...
-		- Self-validating (auto evaluable): Booleano como resultado, no debemos comprobar el resultado de los tests de forma manual.
-		- Timely (oportuno): Hacer las pruebas antes de desarrollar el programa
-
-- **TÉCNICAS DE CAJA NEGRA**
-
-	- Comprobar el comportamiento sin conocer su implementación interna (Resultados externos)
-	- Sirven para definir un conjunto de ESCENARIOS
-
-	```cpp
-	 1    int f(int a, int b) {
-	 2        if (a > 10) {            // D1
-	 3            a += 10;
-	 4        }
-	 
-	 5        if (a > 2 and b > 2) {   // D2 (D2.1 y D2.2)
-	 6            return a * b;
-	 7        } else {
-	 8            return a + b;
-	 9        }
-	10    }
-	```
-
-	- **TABLA DE ESCENARIOS**
-
-		- Situaciones generales donde queremos probar el programa.
-		- Un escenario es inválido si no se cumplen las precondiciones.
-		- Los escenarios pueden estar en funcion de 1 entrada, relaciones de varias entrada, o de salida.
-		- No todo escenario va a acabar convirtiéndose en una prueba específica.
-
-		- Posibles escenarios:
-			- Equilatero, Isosceles, Escaleno, No es un triangulo
-			- La decisión del if de la línea 10 del método llega a tomar el valor false
-
-		- *Planteamiento de escenarios*
-			- escenarios basados en las entradas
-				- En números, negativos, 0, positivos
-			- escenarios basados en las relaciones entre las diferentes entradas
-				- a > b+c
-			- escenarios basados en las posibles salidas
-			- escenarios basados en la relación entre entradas y salidas
-
-		- *Escenarios inválidos vs válidos*
-			- Cada escenario inválido ha de ser cubierto con un caso de prueba específico que no cubra ningún otro escenario inválido
-			- En escenarios válidos, cubrir cuantos más mejor
-
-		- Prefijos
-			- V o I según valido o invalido
-
-		- TABLA ESCENARIOS EJEMPLO
-			- ![2023-10-13_16-12-00_escenarios_tabla.png](/img/user/_Archivos/2023-10-13_16-12-00_escenarios_tabla.png)
-
-	- **TABLA DE CASOS**
-		- ![2023-10-13_16-02-46_casosprueba.png](/img/user/_Archivos/2023-10-13_16-02-46_casosprueba.png)
-		- Casos concretos (*completamente especificados*) usados para comprobar el programa.
-			- a = 7,    b = 8,    salida true
-		- Con pocos casos de prueba cubrimos muchos escenarios.
-		- Se puede dividir la entrada en subcolumnas
-
-
-
-
-
-- **TÉCNICAS DE CAJA BLANCA**
-
-	- DEFINICIÓN Y CONCEPTOS
-		- A diferencia de la caja negra, aquí nos dejamos guiar por el código que queremos probar. Prueban la estructura interna y la lógica de un código, sabiendo como funciona por dentro.
-		- No tenemos en cuenta codigos validos o invalidos, simplemente queremos probar todo el codigo.
-		- Deberemos hacer *diferentes casos de prueba para que se cubran todas las posibles coberturas*
-
-	- POSIBLES COBERTURAS:      `c1 or (c2 and c3)`
-		- Cobertura de sentencias
-			- Todas cubiertas al menos una vez
-			- Ejemplo, un if sin else, o se cubre la sentencia o no se cubre
-		- Escenarios de cobertura de *decisiones*
-			- (un test que cubra ejemplos para todos los "if" por ejemplo *al menos una vez con true y false*)
-			- Ignoramos la complejidad y los operadores lógicos, solo nos importa true o false.
-			- D1T, D2F
-		- Cobertura de *condiciones*
-			- Son los elementos más pequeños, unidos con "or", "and"...
-			- D1.1F, D1.2T, D1.3T, D1.3F...
-			- C1T, C1F, C2T, C2F, C3T, C3F
-			- 2^n escenarios para n condiciones
-		- Cobertura de *condición múltiple*
-			- Tablas de verdad para cada decisión.
-			- D1TXX, D1FTT, D1FTF, D1FFX
-			- C++ es en *circuito corto*, por lo que a veces es inutil seguir comprobando si ya se cumple.
-
-
-
-	- *CAJA BLANCA EJEMPLO*:
-		```cpp
-		int CountNumbers(const std::string& s) {
-		    int n = 0;
-		    bool out_before = true;
-		    for (int i = 0; i < s.length(); ++i) {
-		        if (s.at(i) >= '0' and s[i] <= '9') { // now in a number
-		            if (out_before) {
-		                ++n;
-		                out_before = false;
-		            }
-		        } else {
-		            out_before = true;
-		        }
-		    }
-		    return n;
-		}
-		```
-
-
-		- **TABLA DE DECISIONES**
-			![2023-10-27_20-20-11_.png|409](/img/user/_Archivos/2023-10-27_20-20-11_.png)
-			- Error: `1 < s.length()` es` i < s.length()`
-			- *Decisión*: todo lo de dentro de un if
-			- *Escenarios*: (T/F) para cada decisión
-			- Al hablar de un escenario concreto (Como D1F) queremos decir las situaciones en las que al ejecutar el programa se cumplirá ese escenario concreto al menos una vez. D1F -> siempre, indica que en la ejecución del programa, independentemente de cadena introducida, siempre se llegará a cumplir. En este programa se debe a que el bucle for va decrementando la i (la foto está mal es una i en lugar de 1)
-
-		- **TABLA DE CASOS**
-			![2023-10-27_20-19-01_.png|380](/img/user/_Archivos/2023-10-27_20-19-01_.png)
-			- Con un solo caso cubrimos los 6 escenarios. Con esto queremos decir que al ejecutar el programa con el input "x44y9", se pasará por todos los tipos escenarios posibles para las diferentes sentencias if, while... Comprobando así la seguridad del código al no dejar nada por revisar.
-
-
-		- **TABLA DE ESCENARIOS ---- COBERTURA DE CONDICIÓN MULTIPLE**
-			![2023-10-27_20-18-16_.png|557](/img/user/_Archivos/2023-10-27_20-18-16_.png)
-			- Todo lo de la tabla de decisiones anterior, pero ahora viendo cada *condición* concreta por separado.
-			- *Decisiones iguales en diferentes puntos* han de ser tratadas (x>10)
-
-		- **TABLA DE CASOS  -----  COBERTURA DE CONDICIÓN MULTIPLE**
-			![2023-10-27_20-18-43_.png](/img/user/_Archivos/2023-10-27_20-18-43_.png)
-			- Igual que la normal pero ahora según los nuevos escenarios, más posibilidades
-			- Datos:
-				- / esta por debajo del 0
-				- : esta por encima del 9
-
-# Excepciones
-
-- BLOQUES TRY/CATCH
-
-	```c++
-	try {
-	    // Código que podría lanzar una excepción
-	} catch (const std::runtime_error& e) {
-	    // Manejar excepción de std::runtime_error
-	} catch (const std::exception& e) {
-	    // Manejar excepción genérica de std::exception
-	}
-	
-	```
-
-- LANZAR
-	- `throw std::invalid_argument("elements is empty");`
-
-- UNITTEST
-	- `CPPUNIT_ASSERT_THROW(funcion(), std::invalid_argument)`
-
-# Programación Orientada a Objetos
-
-[[0-Inbox/OOP, Programación Orientada a Objetos\|OOP, Programación Orientada a Objetos]]
-
-# Punteros y memoria dinámica
-
-- ARRAYS DE C Y PUNTEROS / MEMORIA DINÁMICA
-	- `int foo [20];`    // Talla fija de tipo int
-	- `int* foo = new int[5];`
-		- Returns a pointer to the first element.
-		- The first element can be accessed with `foo[0]` or  `*foo`
-		- The second, with `foo[1]` or `*(foo+1)`
-
-- `delete[] pointer;`
-	- releases the memory allocated for arrays of elements using new and a size
-
-```cpp  file:"Ejemplo Aritmétrica Punteros" hl:9
-char *mychar;    // Memoria 1000
-short *myshort;  // Memoria 2000
-long *mylong;    // Memoria 3000
-
-++mychar;    // +1
-++myshort;   // +2
-++mylong;    // +4
-
-// Esto se debe a que sumar uno a un puntero se hace segun el tamaño del tipo de dato que contiene cada puntero. No tendría sentido sumar siempre 1 a la dirección de memoria.
-
-// También se puede usar --
-// También se pueden usar otros números a sumar o restar
-
-
-
-*p++   // same as *(p++): increment pointer, and dereference unincremented address
-*++p   // same as *(++p): increment pointer, and dereference incremented address
-++*p   // same as ++(*p): dereference pointer, and increment the value it points to
-(*p)++ // dereference pointer, and post-increment the value it points to 
-```
-
-- **copy and swap**
-	- en c++, al hacer a=b, esperamos que `a` y `b` sigan vidas independientes
-	- intercambia el contenido de dos objetos sin necesidad de copiar sus datos
-	```cpp warn:2
-	ListaSimple& ListaSimple::operator=(const ListaSimple& otra) {
-		if (&otra != this) {
-			//(this != &otra): Si hacen referencia exactamente al mismo objeto, en la misma posición de memoria, simplemente devolverlo
-
-			// - Esto evita autoasignación, como vector1 = vector1, cosa que daría error al borrar los datos y luego intentar acceder a ellos.
-
-			// - Lo que no evita es hacer vector1 = vector2, vector1 = vector2, vector1 = vector2...
-			ListaSimple copia(otra);
-			std::swap(ini_, copia.ini_);
-			std::swap(fin_, copia.fin_);
-			std::swap(talla_, copia.talla_);
-			// ahora el objeto actual (`*this`) contiene los datos de la copia,
-			// y la copia contiene los datos originales del objeto actual
-		}
-	// Al salir del if, se destruye automatico el objeto copia
-	// con los contenidos del antiguo this
-	return *this;
-	}
-	```
-
-# Costes
-
-- COSTE PEOR CASO
-- COSTE AMORTIZADO
-	- Es simplemente el coste medio.
-	- Consiste en encontrar la operación más costosa y la menos costosa, y encontrar el punto medio para regularlo.
-	- Esto tiene que ver con la práctica 9 de vectores, donde el peor caso para agregar un elemento era de 1, hasta que el array se tenía que duplicar, agregando todos los elementos, y luego agregar el nuevo, siendo un coste de n.
-	- BOLETIN
-		- es de 2\*(i-2)         el coste acumulado en los peores moomentos, donde se duplica el espaio
-		- 3n -4      lineal
-		- *si siempre amplias mediante una cosntante, el coste total sale cuadratico, el coste amortizado sale lineal*
-
-- **ESQUEMAS ALGORITMICOS**        (examen practico)
-	- busqueda anchura
-	- divide y vencerás          (examen hasta aqui)
-
-- algoritmos sobre grafos
-	- muchos problemas son adaptar los algoritmos del recorrido sobre grafos
-	- GRAFO: conjunto de vértices y aristas
-	- Dado un grafo, se quiere hacer cierta tarea, recorrido...
-
-	- Recorrido en anchura      (ejemplo algoritmo)
-		- miramos cada nodo y sus vecinos, ponemos en la cola los que no hemos visto y tambien lo ponemos en vistos, luego vamos viendo todos los vecinos etc.
+# [[0-Inbox/Costes algorítmicos\|Costes algorítmicos]]
 
 # Cuestiones Random
 
