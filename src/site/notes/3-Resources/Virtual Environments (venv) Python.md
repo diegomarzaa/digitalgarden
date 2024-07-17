@@ -9,7 +9,7 @@ Ver también:
 Conceptos:
 
 - Son útiles para evitar conflictos, pudiendo instalar ciertos paquetes para un proyecto concreto, sin que afecte a las instalaciones de los paquetes del sistema.
-- Lo que se crea es una carpeta donde quieras donde se instala una versión light de [[0-Inbox/Python\|Python]] que solo tendrá los módulos que necesites para ese proyecto, haciendo un source de ese path de python lo habilitarás, y todos los pip install que hagas irán a esa carpeta, en "local" digamos, sin que afecte al root o a todo el sistema.
+- Lo que se crea es una carpeta donde quieras donde se instala una versión light de [[3-Resources/Python\|Python]] que solo tendrá los módulos que necesites para ese proyecto, haciendo un source de ese path de python lo habilitarás, y todos los pip install que hagas irán a esa carpeta, en "local" digamos, sin que afecte al root o a todo el sistema.
 - Caso útil: Por ejemplo si para un proyecto necesitas una versión más antigua de una libreria que ya tienes en el sistema, creas ese 'venv' y instalas la versión que quieres ahí, seguirás teniendo la más reciente en el sistema.
 - [Learn Python 1: First install and Virtual Environments - Windows 10 - YouTube](https://youtu.be/x1cbYa2SSlE)
 
